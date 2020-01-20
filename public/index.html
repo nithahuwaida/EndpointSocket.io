@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SteramSic</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <link href="/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+    	<div id="content">
+        	<h2><img id="image" src="/image/film.png" alt="logo">Welcome Website StremSic (Streaming Music Video)</h2>
+	        <div id="content-in">
+	        	<div id='content-video'>
+	        		<iframe width="460" height="315" src="https://www.youtube.com/embed/D1PvIWdJ8xo" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	        		<div id='detail'>
+	        			<div id='title'>
+	        				<h3>UI (Blueming)</h3>
+		        		</div>
+		        		<div id='like'>
+		        			<p id='likecount'></p>
+		        			<button id="btnlike">Like</button>
+		        		</div>
+	        		</div>
+	        	</div>
+	        	<div id='content-comment'>
+	        		<div id="comment-output">
+	        			<h3>Comments</h3>
+		                <div id="output"></div>
+		            </div>
+		            <div id="comment-input">
+		            <input id="handle" type="text" placeholder="Name..." />
+		            <input id="message" type="text" placeholder="Write Message.." />
+		            <button id="send">Send</button>
+		           	</div>
+	        	</div>
+	        </div>
+    	</div>
+    </body>
+    <script src="/comment.js"></script>
+</html>
