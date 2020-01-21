@@ -28,7 +28,7 @@ The RESTful API is built using express js, js nodes and is connected with an io 
 6. Setup the database. [instruction here](#setup-database)
 7. Open **Postman** desktop application or Chrome web extension (Install **Postman** if you haven't yet)
 8. Choose HTTP Method and enter the request URL.(i.e. localhost:8000/video)
-9. Check all **Endpoints** [here](#endpoints)
+9. Check all **Endpoints** [here](#endpoint)
 
 ## Setup .env file
 Open **.env** file on code editor and copy the code below :
@@ -51,16 +51,16 @@ CREATE DATABASE database;
 ```
 
 Create Table named **videos** :
-    ```
-        CREATE TABLE `videos` (
-          `id` int(11) AUTO INCREMENT PRIMARY KEY,,
-          `title` varchar(50),
-          `actress` varchar(50) ,
-          `url` text ,
-          `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-        )
-    ```
-
+```
+    CREATE TABLE `videos` (
+      `id` int(11) AUTO INCREMENT PRIMARY KEY,,
+      `title` varchar(50),
+      `actress` varchar(50) ,
+      `url` text ,
+      `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+    )
+```
+## Endpoint
 #### Get All Video Endpoint
   - **Request** : **`GET /video/`**
   - **Response** :
@@ -110,6 +110,6 @@ Create Table named **videos** :
   
 ## Showcase
 <p align="center">
-  <img width="300" height="300" src="https://user-images.githubusercontent.com/29118699/72728583-4b38e180-3bc0-11ea-9cb6-bd3fcd739d01.PNG">
-  <img width="300" height="300" src="https://user-images.githubusercontent.com/29118699/72814998-8f97b080-3c98-11ea-90d3-afabea233ffc.PNG">
+  <img width="500" height="300" src="https://user-images.githubusercontent.com/29118699/72816342-91627380-3c9a-11ea-87f4-99ac6eaea4e9.PNG">
+  <img width="500" height="300" src="https://user-images.githubusercontent.com/29118699/72816343-91fb0a00-3c9a-11ea-8720-1e70c02c3ecb.PNG">
 </p>
